@@ -21,7 +21,6 @@ import Icons from "views/Icons.js";
 import Typography from "views/Typography.js";
 import TableList from "views/TableList.js";
 import Maps from "views/Maps.js";
-import Upgrade from "views/Upgrade.js";
 import UserPage from "views/UserPage.js";
 
 var dashRoutes = [
@@ -72,14 +71,6 @@ var dashRoutes = [
     name: "Typography",
     icon: "design-2_ruler-pencil",
     component: <Typography />,
-    layout: "/admin",
-  },
-  {
-    pro: true,
-    path: "/upgrade",
-    name: "Upgrade to PRO",
-    icon: "objects_spaceship",
-    component: <Upgrade />,
     layout: "/admin",
   },
 ];
