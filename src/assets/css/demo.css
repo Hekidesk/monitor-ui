@@ -17,6 +17,7 @@
 */
 .tim-row {
   margin-bottom: 20px;
+  padding-top: 60px;
 }
 
 .tim-white-buttons {
@@ -41,9 +42,7 @@
   width: 260px;
   text-transform: none;
 }
-.tim-row {
-  padding-top: 60px;
-}
+
 .tim-row h3 {
   margin-top: 0;
 }
