@@ -33,8 +33,9 @@ var ps;
 
 function Admin(props) {
   const location = useLocation();
-  const [backgroundColor, setBackgroundColor] = React.useState("blue");
+
   const mainPanel = React.useRef();
+
   React.useEffect(() => {
     if (navigator.platform.indexOf("Win") > -1) {
       ps = new PerfectScrollbar(mainPanel.current);
@@ -47,17 +48,16 @@ function Admin(props) {
       }
     };
   });
+  
   React.useEffect(() => {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
     mainPanel.current.scrollTop = 0;
   }, [location]);
-  const handleColorClick = (color) => {
-    setBackgroundColor(color);
-  };
+
   return (
     <div className="wrapper">
-      <Sidebar {...props} routes={routes} backgroundColor={backgroundColor} />
+      <Sidebar {...props} routes={routes} backgroundColor={"blue"} />
       <div className="main-panel" ref={mainPanel}>
         <DemoNavbar {...props} />
         <Routes>
@@ -72,11 +72,11 @@ function Admin(props) {
             );
           })}
           <Route
-            path="/admin"
-            element={<Navigate to="/admin/dashboard" replace />}
+            path="/monitor"
+            element={<Navigate to="/monitor/dashboard" replace />}
           />
         </Routes>
-        <Footer fluid />
+        <Footer />
       </div>
     </div>
   );

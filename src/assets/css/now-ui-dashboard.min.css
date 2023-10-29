@@ -2995,7 +2995,7 @@ Created using IcoMoon - icomoon.io
   height: 100%;
   content: "";
   display: block;
-  background: #FFFFFF;
+  background: #ffffff;
   opacity: 1;
 }
 .sidebar .logo,
@@ -3003,6 +3003,8 @@ Created using IcoMoon - icomoon.io
   position: relative;
   padding: 0.5rem 0.7rem;
   z-index: 4;
+  display: flex;
+  align-items: center;
 }
 .sidebar .logo a.logo-mini,
 .off-canvas-sidebar .logo a.logo-mini {
@@ -3197,7 +3199,7 @@ Created using IcoMoon - icomoon.io
   height: 260px;
   padding-top: 80px;
   padding-bottom: 45px;
-  background: #141E30; /* fallback for old browsers */
+  background: #141e30; /* fallback for old browsers */
   background: linear-gradient(to right, #0c2646 0%, #204065 60%, #2a5788 100%);
   position: relative;
   overflow: hidden;
