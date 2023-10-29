@@ -16,6 +16,7 @@
 
 */
 import Dashboard from "views/Dashboard.js";
+import Live from "views/Live";
 import UserPage from "views/UserPage.js";
 
 var dashRoutes = [
@@ -25,6 +26,7 @@ var dashRoutes = [
     icon: "media-2_sound-wave",
     component: <Dashboard />,
     layout: "/monitor",
+    page: false,
   },
   {
     path: "/patients",
@@ -32,6 +34,23 @@ var dashRoutes = [
     icon: "users_single-02",
     component: <UserPage />,
     layout: "/monitor",
+    page: false,
+  },
+  {
+    path: "/patients/:id",
+    name: "Patients",
+    icon: "users_single-02",
+    component: <UserPage />,
+    layout: "/monitor",
+    page: true,
+  },
+  {
+    path: "/live",
+    name: "Patients",
+    icon: "users_single-02",
+    component: <Live />,
+    layout: "/monitor",
+    page: true,
   },
 ];
 export default dashRoutes;

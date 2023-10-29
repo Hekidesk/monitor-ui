@@ -176,9 +176,9 @@ function User() {
                   <p className="description">michael24</p>
                 </div>
                 <p className="description text-center">
-                  "Lamborghini Mercy <br />
+                  Lamborghini Mercy <br />
                   Your chick she so thirsty <br />
-                  I'm in that two seat Lambo"
+                  Im in that two seat Lambo
                 </p>
               </CardBody>
               <hr />

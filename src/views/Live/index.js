@@ -16,20 +16,38 @@
 
 */
 import React from "react";
-// react plugin used to create charts
 
 // reactstrap components
+import { Row, Col } from "reactstrap";
 
-// core components
-import PanelHeader from "components/PanelHeader/PanelHeader.js";
+import Heartbeat from "./HeartBeat";
+import SpO2 from "./SpO2";
+import RespirationRate from "./RespirationRate";
+import Temperature from "./Temperature";
+import UserInfo from "./UserInfo";
 
-function Dashboard() {
+function Live() {
   return (
     <>
-      <PanelHeader size="lg" />
-      <div className="content"></div>
+      <Heartbeat />
+      <div className="content">
+        <Row>
+          <Col xs={12} md={6} className="d-flex align-items-center">
+            <UserInfo />
+          </Col>
+          <Col xs={12} md={6}>
+            <SpO2 />
+          </Col>
+          <Col xs={12} md={6}>
+            <RespirationRate />
+          </Col>
+          <Col xs={12} md={6}>
+            <Temperature />
+          </Col>
+        </Row>
+      </div>
     </>
   );
 }
 
-export default Dashboard;
+export default Live;
