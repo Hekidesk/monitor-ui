@@ -5,7 +5,7 @@ import { Line } from "react-chartjs-2";
 // reactstrap components
 import { Card, CardHeader, CardBody, CardFooter, CardTitle } from "reactstrap";
 
-import { respirationRate } from "variables/respirationRate";
+import { respirationRate } from "variables/Live/respirationRate";
 
 function RespirationRate() {
   return (

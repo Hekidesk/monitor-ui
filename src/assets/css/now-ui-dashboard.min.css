@@ -1214,10 +1214,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #f96332;
+  color: #444;
 }
 a:hover, a:focus {
-  color: #f96332;
+  color: #4bb5ff;
 }
 
 h1, .h1 {
@@ -3516,7 +3516,7 @@ Created using IcoMoon - icomoon.io
 
 .card {
   border: 0;
-  border-radius: 0.1875rem;
+  border-radius: 0.875rem;
   display: inline-block;
   position: relative;
   width: 100%;

@@ -15,9 +15,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-// ##############################
-// // // Function that converts a hex color number to a RGB color number
-// #############################
+
 export function hexToRGB(hex, alpha) {
   var r = parseInt(hex.slice(1, 3), 16),
     g = parseInt(hex.slice(3, 5), 16),
@@ -30,9 +28,6 @@ export function hexToRGB(hex, alpha) {
   }
 }
 
-// ##############################
-// // // general variables for charts
-// #############################
 
 export const chartColor = "#FFFFFF";
 

@@ -2,7 +2,7 @@
 // // // Dashboard view - Shipped Products - Card
 // #############################
 
-import { chartColor, gradientChartOptionsConfiguration } from "./charts";
+import { chartColor, gradientChartOptionsConfiguration } from "../charts";
 
 export const spo2Data = {
   data: (canvas) => {

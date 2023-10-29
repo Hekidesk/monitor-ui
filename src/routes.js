@@ -15,7 +15,7 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import Dashboard from "views/Dashboard.js";
+import Dashboard from "views/Dashboard";
 import Live from "views/Live";
 import UserPage from "views/UserPage.js";
 
@@ -45,7 +45,7 @@ var dashRoutes = [
     page: true,
   },
   {
-    path: "/live",
+    path: "/live/:id",
     name: "Patients",
     icon: "users_single-02",
     component: <Live />,

@@ -5,7 +5,7 @@ import { Line } from "react-chartjs-2";
 // reactstrap components
 import { Card, CardHeader, CardBody, CardFooter, CardTitle } from "reactstrap";
 
-import { temperature } from "variables/temperature";
+import { temperature } from "variables/Live/temperature";
 
 function Temperature() {
   return (

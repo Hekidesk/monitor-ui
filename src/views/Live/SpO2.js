@@ -7,7 +7,7 @@ import { Line } from "react-chartjs-2";
 import { Card, CardBody, CardFooter, CardHeader, CardTitle } from "reactstrap";
 
 // core components
-import { spo2Data } from "variables/spo2Data";
+import { spo2Data } from "variables/Live/spo2Data";
 
 function SpO2() {
   return (
