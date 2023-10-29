@@ -23,52 +23,17 @@ import PropTypes from "prop-types";
 
 function Footer(props) {
   return (
-    <footer className={"footer" + (props.default ? " footer-default" : "")}>
-      <Container fluid={props.fluid ? true : false}>
-        <nav>
-          <ul>
-            <li>
-              <a
-                href="https://www.creative-tim.com?ref=nudr-footer"
-                target="_blank"
-              >
-                Creative Tim
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://presentation.creative-tim.com?ref=nudr-footer"
-                target="_blank"
-              >
-                About Us
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://blog.creative-tim.com?ref=nudr-footer"
-                target="_blank"
-              >
-                Blog
-              </a>
-            </li>
-          </ul>
-        </nav>
+    <footer className={"footer"}>
+      <Container fluid>
         <div className="copyright">
-          &copy; {1900 + new Date().getYear()}, Designed by{" "}
+          &copy; {1900 + new Date().getYear()}, Designed by
           <a
-            href="https://www.invisionapp.com"
+            href="https://www.hekidesk.com"
             target="_blank"
             rel="noopener noreferrer"
+            className="mx-1"
           >
-            Invision
-          </a>
-          . Coded by{" "}
-          <a
-            href="https://www.creative-tim.com?ref=nudr-footer"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Creative Tim
+            HekiMed
           </a>
           .
         </div>
