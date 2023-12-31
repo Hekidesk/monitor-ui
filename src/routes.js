@@ -17,7 +17,7 @@
 */
 import Dashboard from "views/Dashboard";
 import Live from "views/Live";
-import UserPage from "views/UserPage.js";
+import UserPage from "views/User/UserPage";
 
 var dashRoutes = [
   {

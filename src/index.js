@@ -24,12 +24,14 @@ import "assets/scss/now-ui-dashboard.scss?v1.5.0";
 import "assets/css/demo.css";
 
 import AdminLayout from "layouts/Admin.js";
+import Test from "views/Test";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <BrowserRouter>
     <Routes>
+      <Route path="/monitor/test" element={<Test />} />
       <Route path="/monitor/*" element={<AdminLayout />} />
       <Route path="*" element={<Navigate to="/monitor/dashboard" replace />} />
     </Routes>
