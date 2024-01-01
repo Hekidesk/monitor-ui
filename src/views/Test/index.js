@@ -4,27 +4,24 @@ import { socket } from "socket";
 
 function Test() {
   const [isConnected, setIsConnected] = useState(socket.connected);
-  console.log(
-    "🚀 ~ file: HeartBeat.js:13 ~ Heartbeat ~ isConnected:",
-    isConnected
-  );
   const [fooEvents, setFooEvents] = useState([]);
-  console.log("🚀 ~ file: HeartBeat.js:15 ~ Heartbeat ~ fooEvents:", fooEvents);
-
+  console.log(isConnected, fooEvents);
   useEffect(() => {
     function onConnect() {
-      socket.emit("subscribe_to_topic", { topic: "ppg" });
+      socket.emit("subscribe_to_topic", { topic: "ecg" });
 
+      console.log("called in connect and emit!");
       setIsConnected(true);
     }
 
     function onDisconnect() {
+      console.log("disconnect socket");
       setIsConnected(false);
       socket.emit("unsubscribe_from_topic");
     }
 
     function onPPGEvent(value) {
-      console.log("🚀 ~ file: HeartBeat.js:32 ~ onFooEvent ~ value:", value);
+      console.log("ppg", value);
       setFooEvents((previous) => [...previous, value]);
     }
 

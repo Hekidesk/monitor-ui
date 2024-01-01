@@ -21,15 +21,15 @@ import { Navbar, NavbarBrand, Container } from "reactstrap";
 
 import routes from "routes.js";
 
-function DemoNavbar(props) {
+function DemoNavbar() {
   const location = useLocation();
   const sidebarToggle = React.useRef();
 
   const getBrand = () => {
     var name;
-    routes.map((prop, key) => {
+    routes.map((prop) => {
       if (prop.collapse) {
-        prop.views.map((prop, key) => {
+        prop.views.map((prop) => {
           if (prop.path === location.pathname) {
             name = prop.name;
           }
